@@ -16,16 +16,15 @@ jobs:
 
      env:
        PORT: 8000
-       DB_NAME: test
-       DB_SECRET: secret
-       DJANGO_SECRET: "DJANGOSECRETEHEHEH(****#TEFF"
+       DB_NAME: indexer
+       DB_SECRET: qwert
+       DJANGO_SECRET: "FDJDSLJFHUDHJCTKLLLCMNII(****#TEFF"
        HOST: localhost
-       API_SECRET: "secret"
-       SERVICE_NAME: "IETF BibXML service test"
+       API_SECRET: "test"
+       SERVICE_NAME: "IETF BibXML service"
        CONTACT_EMAIL: "test@email.com"
        DEBUG: 1
        SNAPSHOT: "test"
-
      steps:
      - uses: actions/checkout@v3
      - name: Build the Docker image and run the tests
